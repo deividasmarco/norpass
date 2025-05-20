@@ -22,4 +22,5 @@ test('promo flow applies correct coupon and discount', async ({ page }) => {
   const couponPill = page.getByTestId('applied-coupon');
   await expect(couponPill).toBeVisible();
   await expect(couponPill).toHaveText(COUPON);
+  console.log("COUPON:", COUPON, "DISCOUNT:", DISCOUNT);
 });
