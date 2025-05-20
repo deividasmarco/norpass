@@ -9,7 +9,7 @@ const EXPIRY_DATE    = '05/20';
 const CVC_CODE       = '123';
 const POSTAL_CODE    = '14187';
 
-test('NordPass checkout — guest flow', async ({ page }) => {
+test('Product purschase flow', async ({ page }) => {
   await page.goto('https://nordpass.com', { waitUntil: 'networkidle' });
   const accept = page.getByTestId('consent-widget-accept-all');
   if (await accept.isVisible()) await accept.click();
